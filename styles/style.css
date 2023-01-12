@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #f2ebe3;
+  height: 100vh;
+  display: flex;
+  align-items: center; }
+  body .main {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px; }
+    body .main .image-container {
+      flex: 1; }
+      body .main .image-container .main-image {
+        content: url("../assets/image-product-mobile.jpg");
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px; }
+    body .main .text-container {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 20px; }
+      body .main .text-container .category {
+        text-transform: uppercase;
+        color: #6c7289;
+        letter-spacing: 4px; }
+      body .main .text-container .title {
+        font-family: "Fraunces", serif;
+        margin: 16px 0; }
+      body .main .text-container .description {
+        color: #6c7289; }
+      body .main .text-container .price {
+        display: flex;
+        align-items: center;
+        margin: 16px 0;
+        font-family: "Fraunces", serif; }
+        body .main .text-container .price .normal {
+          color: #3c8067;
+          font-size: 1.7rem;
+          margin-right: 20px; }
+        body .main .text-container .price .sale {
+          text-decoration: line-through;
+          color: #6c7289; }
+      body .main .text-container .text-container-btn {
+        width: 100%;
+        background-color: #3c8067;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif; }
+        body .main .text-container .text-container-btn:hover {
+          background-color: #1c4a39; }
+        body .main .text-container .text-container-btn img {
+          margin-right: 10px; }
+
+@media (min-width: 768px) {
+  body .main {
+    flex-direction: row;
+    width: 100%; }
+    body .main .image-container .main-image {
+      content: url("../assets/image-product-desktop.jpg");
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 20px; }
+    body .main .text-container {
+      padding: 40px; } }
